@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 22 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Mono:wght@500&family=Lobster&family=Orbitron:wght@900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+
+    <div class="mainSec">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 m-auto">
+                    <div style="border-left: 7px solid rgb(255, 2, 247);border-right: 7px solid rgb(255, 2, 247);border-radius: 15px;" class="card shadow mt-5">
+                        <div class="card-body">
+                            <h2 style="border-bottom: 2px solid rgb(255, 2, 247);padding-bottom: 20px;" class="text-center">ADD NEW STUDENT</h2>
+
+                            <form id="staffAddForm" action="#">
+                                <div class="mt-3">
+                                    <label for="namInput">Enter Your Name</label>
+                                    <input name="nam" type="text" class="form-control" id="namInput">
+                                </div>
+    
+                                <div class="mt-3">
+                                    <label for="numbInput">Enter Your Roll Number</label>
+                                    <input name="rollNo" type="number" class="form-control" id="numbInput">
+                                </div>
+    
+                                <div class="mt-3">
+                                    <label for="locationInput">Enter Your Location</label>
+                                    <input name="location" type="text" class="form-control" id="locationInput">
+                                </div>
+    
+                                <div class="mt-3">
+                                    <label for="photoInput">Enter Your Photo Link</label>
+                                    <input name="photo" type="text" class="form-control" id="photoInput">
+                                </div>
+    
+                                <div class="mt-3">
+                                    <input type="submit" value="SUBMIT" class="btn btn-success w-100">
+                                </div>
+                            </form>
+
+                            <div id="confirmation">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mainSec2">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 m-auto">
+                    <div style="border-left: 7px solid rgb(255, 2, 247);border-right: 7px solid rgb(255, 2, 247);border-radius: 15px;" class="card shadow mt-4 mb-5">
+                        <div class="card-body">
+                            <h2 style="border-bottom: 2px solid rgb(255, 2, 247);padding-bottom: 15px;margin-bottom: 20px;" class="text-center">ALL STUDENT DATA</h2>
+                            <table class="table table-striped table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>NAME</th>
+                                        <th>ROLL NUMBER</th>
+                                        <th>LOCATION</th>
+                                        <th>PHOTO</th>
+                                        <th>ACTION</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="uploadStaffData">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
